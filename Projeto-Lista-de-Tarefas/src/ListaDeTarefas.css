@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*:focus {
+    outline: none
+}
+
+
+body {
+    background-color: #222435;
+    font-family: Noto Sans;
+}
+
+h1 {
+    margin: 50px;
+    text-align: center;
+    color: #7d83b9;
+    font-weight: 750;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+
+    max-width: 600px;
+    height: 60px;
+
+    /* background-color: red; */
+    border-radius: 10px;
+
+    margin: auto;
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+
+    background-color: #2d3046;
+    border-radius: 10px;
+    border: none;
+
+    padding: 30px;
+    font-size: 1.0em;
+    color: white;
+}
+
+.btn-add {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    padding: 0px 30px;
+
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background-color: #363b65;
+    color: white;
+
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    color: white;
+    background-color: #363f88;
+    transition: .111s;
+}
+
+.ListaTarefas {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+
+    /* background-color: red; */
+}
+
+.item {
+    background: none;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    border: 1px solid #363f88;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #151617;
+}
+
+.item>span {
+    width: 100%;
+    color: white;
+
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+
+.item-completo {
+    background: #1e1f2e;
+    opacity: 0.75;
+    border: none;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    border: 1px solid #363f88;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+.item-completo>span {
+    width: 100%;
+    color: #4d506d;
+
+    margin-right: 10px;
+    padding: 10px 15px;
+
+    text-decoration: line-through;
+}
+
+.btn-deletar { 
+    height: 100%;
+    border: none;
+    color:#4d506e;
+
+    padding: 14px 13px;
+    cursor: pointer;
+    background: none;
+}
+.btn-deletar:hover {
+    background-color: #ff004c;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    transition: .1s;
+}
+
+.btn-deletar-tudo {
+    margin-top: 30px;
+    width: 100%;
+
+    padding: 13px;
+    background: none;
+    border: 1px solid #ff004c;
+    color: #ff004c;
+
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-deletar-tudo:hover {
+    transition: .177s;
+    background-color: #ff004c;
+    color: white;
+}
+
+/* -------------------------------------- */
+/* Ajuste de responsividade */
+@media screen and (max-width: 900px) {
+    form {
+        max-width: 65%;
+    }
+    .ListaTarefas {
+        max-width: 65%;
+    }
+}

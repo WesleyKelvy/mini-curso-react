@@ -1,0 +1,13 @@
+1 - abrir cmd e colar meu diretório
+
+2 - npm create vite@latest [nome do projeto] -- -- template react
+
+3 - dar um "cd [nome do projeto]" para ir para o projeto
+
+4 - Abrir no VS code
+
+5 - abrir terminal e colar "npm install"
+
+6 - Rodar "npm run dev"
+
+7 - Abrir na página
